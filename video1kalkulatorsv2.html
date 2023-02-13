@@ -1,0 +1,91 @@
+<!-- code written by ralfslapins -->
+<!-- thanks to ambex.lv for code example -->
+
+<!DOCTYPE html>
+<html>
+
+<script>
+
+function ftest()
+    {
+        alert("the code worked!!");
+    }
+    
+function cal()
+    {
+    let n1 = document.querySelector("#n1").value;
+    let n2 = document.querySelector("#n2").value;
+    
+    let n3 = Number(n1) + Number(n2);
+
+    
+    document.querySelector("#n3").value = n3;
+    }
+     
+function calsub()
+
+    {
+    let n1 = document.querySelector("#n1").value;
+    let n2 = document.querySelector("#n2").value;
+    
+    let n3 = Number(n1) - Number(n2);
+
+    
+    document.querySelector("#n3").value = n3;
+    }
+    
+function caldev()
+
+    {
+    let n1 = document.querySelector("#n1").value;
+    let n2 = document.querySelector("#n2").value;
+    
+    let n3 = Number(n1) / Number(n2);
+
+    
+    document.querySelector("#n3").value = n3;
+    }
+    
+function calmul()
+
+    {
+    let n1 = document.querySelector("#n1").value;
+    let n2 = document.querySelector("#n2").value;
+    
+    let n3 = Number(n1) * Number(n2);
+
+    
+    document.querySelector("#n3").value = n3;
+    }
+    
+</script>
+
+<script>alert("nav info: ievada ciparu pirmajā lauciņā, ievada ciparu otrajā lauciņā. izmanto (+), (-), (/), (*), pogas lai izreiķinātu rezūltātu kas parādās trešajā lauciņā");</script>
+<head>
+
+<title>Ralfs lapiņš (kalkulātors) [PRT1]</title>
+
+</head>
+
+<body>
+
+<input id='n1'> [] <input id='n2'> = <input id='n3'>
+<br>
+<input type='button' value='+' onclick="caladd()">
+<input type='button' value='-' onclick="calsub()">
+<input type='button' value='/' onclick="caldev()">
+<input type='button' value='*' onclick="calmul()">
+<input type='button' value='tbW!ctt' onclick="closeonerr()">
+
+<script>
+function closeonerr()
+
+    {
+        alert(":(")
+    window.close();
+    }
+</script>
+
+</body>
+
+</html>
